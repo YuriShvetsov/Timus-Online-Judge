@@ -2,8 +2,9 @@
 # -*- coding: utf-8 -*-
 '''1209. 1, 10, 100, 1000...'''
 
-import sys
 import math
+import sys
+
 
 # Search for the sum of a sequence of natural numbers
 def theSumNum(num):
