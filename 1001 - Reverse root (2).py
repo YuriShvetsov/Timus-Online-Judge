@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 '''1001. Reverse root'''
 
-import sys, math
 a = []
 for line in sys.stdin:
     for i in line.split():
