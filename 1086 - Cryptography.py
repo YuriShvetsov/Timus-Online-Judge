@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 '''1086. Cryptography'''
-# Оптимизировать функцию isPrime(n)
+# Оптимизировать функцию isPrime(n) или listPrimeNumbers(n)
 
 import math
 import sys
