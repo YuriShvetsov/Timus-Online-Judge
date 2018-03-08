@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 '''1086. Cryptography'''
-# Оптимизировать функцию isPrime(n) и(-или) listPrimeNumbers(n)
 
-import math
 import sys
 
 
@@ -16,14 +14,14 @@ def isPrime(n):
     return d * d > n
 
 def listPrimeNumbers(n):
-    lst = []
-    for i in range(2, n + 1):
+    lst = [2]
+    for i in range(3, n + 1, 2):
         if isPrime(i) == True:
             lst.append(i)
 
     return lst
 
-lp = listPrimeNumbers(170000)
+lp = listPrimeNumbers(163842)
 
 numbers = []
 for line in sys.stdin:
