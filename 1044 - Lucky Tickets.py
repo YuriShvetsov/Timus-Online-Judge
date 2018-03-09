@@ -5,8 +5,6 @@
 import math
 
 
-n = int(input())
-
 def tickets(num):
     tickets = ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09']
     for i in range(10, int(math.pow(10, int(num / 2)))):
@@ -50,4 +48,5 @@ def main(num):
     return int(nums)
 
 
+n = int(input())
 print(main(n))
