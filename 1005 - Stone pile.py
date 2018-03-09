@@ -18,7 +18,7 @@ a = []
 for i in input().split(' '):
     a.append(int(i))
 
-_min = 99999999 # Minimum difference between piles
+_min = 99999999 # Maximum posible difference between piles
 
 rec(0, 0, 0)
 print(_min)
