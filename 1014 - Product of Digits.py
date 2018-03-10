@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 '''1014. Product of Digits'''
 
-n = int(input())
-
 def main(num):
     alist = []
 
@@ -16,7 +14,7 @@ def main(num):
                 k -= 1
 
                 if k == 1:
-                    return -1
+                    return False
             alist.append(k)
             num = int(num / k)
 
@@ -28,7 +26,7 @@ def main(num):
 def secondary(num):
     astr = ''
 
-    if main(num) == -1:
+    if not main(num):
         return -1
     else:
         for j in main(num):
@@ -36,5 +34,7 @@ def secondary(num):
 
         return int(astr)
 
+
+n = int(input())
 
 print(secondary(n))
